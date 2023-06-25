@@ -6,12 +6,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <CHeader />
       <body>
         <Main />
         <NextScript />
       </body>
-      <CFooter />
     </Html>
   );
 }
