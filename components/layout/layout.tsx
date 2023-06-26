@@ -18,7 +18,7 @@ const Clayout: React.FC<ILayout> = ({
     <main className={classNames}>
       <Head>
         <meta name="description" content={pageDescription} />
-        <meta http-equiv="Content-Language" content="fa" />
+        <meta httpEquiv="Content-Language" content="fa" />
       </Head>
       <CMain hasHeader={hasHeader} hasFooter={hasFooter} isRTL={isRTL}>
         {children}

@@ -1,4 +1,4 @@
-export const header = {
+export const headerContent = {
   links: [
     {
       text: "",
@@ -15,7 +15,8 @@ export const header = {
   ],
   ctaButton: "",
 };
-export const footer = {
+
+export const footerContent = {
   copyright: "",
   darkModeButton: "",
   links: [
@@ -34,10 +35,10 @@ export const footer = {
   ],
 };
 
-export const homepage = {
+export const homeContent = {
   pageDescription: "",
   title: "",
   subTitle: "",
-  ctaButton: header.ctaButton,
+  ctaButton: headerContent.ctaButton,
   infoButton: "",
 };

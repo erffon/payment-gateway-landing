@@ -1,7 +1,5 @@
 import Clayout from "@/components/layout/layout";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { homeContent } from "@/contents/homepage/data";
 
 export default function Home() {
   return (
@@ -13,8 +11,8 @@ export default function Home() {
       classNames="bg-zinc-900"
     >
       <main>
-        <div>درگاه پرداختی همه‌کاره برای </div>
-        <div></div>
+        <div>{homeContent.title}</div>
+        <div>{homeContent.subTitle}</div>
       </main>
     </Clayout>
   );
