@@ -17,7 +17,7 @@ const CMain: React.FC<IMain> = ({
 }) => {
   return (
     <Fragment>
-      <div dir={isRTL ? "rtl" : "ltr"} className="overflow-hidden">
+      <div dir={isRTL ? "rtl" : "ltr"} className="overflow-hidden px-52 ">
         {hasHeader && <CHeader />}
         {children}
         {hasFooter && <CFooter />}

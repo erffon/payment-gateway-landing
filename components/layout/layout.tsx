@@ -1,9 +1,9 @@
 import Head from "next/head";
-import CHeader from "./header";
 import CMain, { IMain } from "./main";
 
 interface ILayout extends IMain {
   pageDescription: string;
+  classNames: string;
 }
 
 const Clayout: React.FC<ILayout> = ({
@@ -12,9 +12,10 @@ const Clayout: React.FC<ILayout> = ({
   hasHeader,
   isRTL,
   pageDescription,
+  classNames = "",
 }) => {
   return (
-    <main>
+    <main className={classNames}>
       <Head>
         <meta name="description" content={pageDescription} />
         <meta http-equiv="Content-Language" content="fa" />

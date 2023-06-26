@@ -3,7 +3,10 @@ import logo from "./assets/logo.png";
 
 const CHeader = () => {
   return (
-    <header className="overflow-hidden flex" dir="rtl">
+    <header
+      className="overflow-hidden flex justify-between py-5 mb-10 bg-slate-black"
+      dir="rtl"
+    >
       <div className="relative w-20 h-20">
         <Image src={logo} alt="website logo" fill />
       </div>
@@ -14,7 +17,9 @@ const CHeader = () => {
           <li>ارتباط با ما</li>
         </ul>
       </div>
-      <div></div>
+      <div className="flex justify-center items-center">
+        <button>پرداخت</button>
+      </div>
     </header>
   );
 };
