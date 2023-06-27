@@ -11,8 +11,11 @@ export default function Home() {
       classNames="bg-zinc-900"
     >
       <main>
-        <div>{homeContent.title}</div>
-        <div>{homeContent.subTitle}</div>
+        <div>
+          <h1>{homeContent.title}</h1>
+          <h2>{homeContent.title}</h2>
+        </div>
+        <div></div>
       </main>
     </Clayout>
   );
