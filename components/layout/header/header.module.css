@@ -1,0 +1,12 @@
+.container {
+  @apply overflow-hidden flex justify-between py-5 mb-10 font-PelakRegular;
+}
+.links-container {
+  @apply flex justify-around py-3 backdrop-blur-lg rounded-full border-zinc-300/80 border-2 w-96;
+}
+.links {
+  @apply text-zinc-400 cursor-pointer hover:text-black hover:border-black hover:font-PelakBold duration-300 transition-all ease-out;
+}
+.cta {
+  @apply border-2 border-zinc-300  hover:border-black hover:font-PelakBold duration-300 transition-all ease-out hover:bg-zinc-100 px-4 py-2 rounded-full hover:text-black text-zinc-400;
+}

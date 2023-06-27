@@ -1,19 +1,19 @@
 export const headerContent = {
   links: [
     {
-      text: "",
+      text: "خانه",
       link: "",
     },
     {
-      text: "",
+      text: "درباره من",
       link: "",
     },
     {
-      text: "",
+      text: "ارتباط با من",
       link: "",
     },
   ],
-  ctaButton: "",
+  ctaButton: "پرداخت",
 };
 
 export const footerContent = {

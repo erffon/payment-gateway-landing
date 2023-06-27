@@ -8,7 +8,7 @@ export default function Home() {
       hasHeader={true}
       hasFooter={true}
       isRTL={true}
-      classNames="bg-zinc-900"
+      classNames=""
     >
       <main>
         <div>

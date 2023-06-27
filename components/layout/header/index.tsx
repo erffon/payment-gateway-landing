@@ -1,25 +1,23 @@
 import Image from "next/image";
 import logo from "./assets/logo.png";
 import style from "./header.module.css";
+import { headerContent } from "../../../contents/homepage/data";
 
 const CHeader = () => {
   return (
-    <header
-      className="overflow-hidden flex justify-between py-5 mb-10 bg-slate-black"
-      dir="rtl"
-    >
+    <header className={style.container} dir="rtl">
       <div className="relative">
         <Image src={logo} alt="website logo" width={80} height={80} />
       </div>
       <div className="flex justify-center items-center">
-        <ul className="flex justify-around py-4 backdrop-blur-lg bg-zinc-700 rounded-full border-zinc-400/80 border w-96">
-          <li className={style.links}>خانه</li>
-          <li className={style.links}>درباره</li>
-          <li className={style.links}>ارتباط با من</li>
+        <ul className={style["links-container"]}>
+          {headerContent.links.map((item) => {
+            return <li className={style.links}>{item.text}</li>;
+          })}
         </ul>
       </div>
       <div className="flex justify-center items-center">
-        <button>پرداخت</button>
+        <button className={style.cta}>{headerContent.ctaButton}</button>
       </div>
     </header>
   );
