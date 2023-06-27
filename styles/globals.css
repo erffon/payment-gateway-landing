@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "PelakBlack";
+  src: url("../public/assets/fonts/PelakFA-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "PelakBold";
+  src: url("../public/assets/fonts/PelakFA-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "PelakLight";
+  src: url("../public/assets/fonts/PelakFA-light.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PelakRegular";
+  src: url("../public/assets/fonts/PelakFA-Regular.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PelakMedium";
+  src: url("../public/assets/fonts/PelakFA-Medium.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PelakSemiBold";
+  src: url("../public/assets/fonts/PelakFA-SemiBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PelakThin";
+  src: url("../public/assets/fonts/PelakFA-Thin.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply text-white font-PelakThin;
 }
