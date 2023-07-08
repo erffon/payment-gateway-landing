@@ -1,0 +1,22 @@
+.main {
+  @apply bg-zinc-900 h-screen flex justify-center items-center relative;
+}
+.container {
+  perspective: 200px;
+  @apply shadow-lg relative top-0 left-0;
+}
+.card-container {
+  @apply w-80 h-[500px] bg-slate-200 rounded-2xl absolute top-0 left-0;
+}
+.title {
+  @apply text-zinc-700 font-bold text-2xl relative top-10 left-5;
+}
+.subtitle {
+  @apply text-zinc-400 text-lg relative top-10 left-5;
+}
+.coupon {
+  @apply bg-gray-300/50 text-lg text-zinc-500 relative top-10 w-40 p-5 rounded-xl text-center mx-auto;
+}
+.qrcode {
+  @apply w-40 mx-auto mt-20;
+}
